@@ -1,5 +1,8 @@
  /* ==== MAIN CSS ==== */
 
+* {
+  box-sizing: border-box;
+}
 
 .search-flex-contain {
   display: flex;
@@ -7,22 +10,80 @@
   /* flex-wrap: wrap; */
 }
 
- #searchbox {
-   margin: 50px auto 0 auto;
-   width: 60%;
-   max-width: 500px;
-   height: 40px;
-   border-radius: 5px;
-   border: 2px solid #dedede;
-   text-indent: 10px;
-   transition: outline-color .3s;
- }
+#searchbox {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  max-width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #dedede;
+  text-indent: 10px;
+  transition: outline-color .3s;
+}
 
- #searchbox::placeholder {
-   color: #a6a6a6;
- }
+#searchbox::placeholder {
+  color: #a6a6a6;
+}
 
- #searchbox:focus,
- #searchbox:active {
-   outline-color: rgba(255, 210, 150, 0.53);
- }
+#searchbox:focus,
+#searchbox:active {
+  outline-color: rgba(255, 210, 150, 0.53);
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  width:90%;
+  max-width: 1245px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.thumb-container {
+  display: inline-block;
+  width: 50%;
+  margin: 10px -5px;
+
+}
+
+.thumb-img {
+  width: 100%;
+  max-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/* MEDIA QUERIES ------------------------------- */
+
+@media (min-width: 635px) {
+
+  .gallery {
+
+  }
+
+  .thumb-container {
+    width: calc( 100% / 3 );
+  }
+}
+
+@media (min-width: 900px) {
+  .gallery {
+
+  }
+
+  .thumb-container {
+    width: calc( 100% / 4 );
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+  }
+}
