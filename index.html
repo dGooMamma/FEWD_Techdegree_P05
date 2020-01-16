@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/lightbox/lightbox.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Search the Gallery</title>
   </head>
@@ -16,45 +18,52 @@
         </div>
         <div class="gallery">
           <div class="thumb-container">
-            <img src="images/thumbnails/01.jpg" class="thumb-img" alt="">
+            <a href="images/01.jpg" data-lightbox="landscapes" data-title="Hay Bales - I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="images/thumbnails/01.jpg" class="thumb-img" alt="Hay bales in an open field"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/02.jpg" class="thumb-img" alt="">
+            <a href="images/02.jpg" data-lightbox="landscapes" data-title="Lake - The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="images/thumbnails/02.jpg" class="thumb-img" alt="A sizeable lake with mountains in the distance"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/03.jpg" class="thumb-img" alt="">
+            <a href="images/03.jpg" data-lightbox="landscapes" data-title="Canyon - I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="images/thumbnails/03.jpg" class="thumb-img" alt="A canyon with green shrubbery all around"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/04.jpg" class="thumb-img" alt="">
+            <a href="images/04.jpg" data-lightbox="landscapes" data-title="Iceberg - It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="images/thumbnails/04.jpg" class="thumb-img" alt="An iceberg sits in the water while snow-covered mountains line the background"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/05.jpg" class="thumb-img" alt="">
+            <a href="images/05.jpg" data-lightbox="landscapes" data-title="Desert - The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="images/thumbnails/05.jpg" class="thumb-img" alt="Giant red cliffs bask in the setting sunlight"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/06.jpg" class="thumb-img" alt="">
+            <a href="images/06.jpg" data-lightbox="landscapes" data-title="Fall - Fall is coming, I love when the leaves on the trees start to change color."><img src="images/thumbnails/06.jpg" class="thumb-img" alt="Many different colored trees that are beginning to change color"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/07.jpg" class="thumb-img" alt="">
+            <a href="images/07.jpg" data-lightbox="landscapes" data-title="Plantation - I drove past this plantation yesterday, everything is so green!"><img src="images/thumbnails/07.jpg" class="thumb-img" alt="A plantation of green as far as the eye can see"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/08.jpg" class="thumb-img" alt="">
+            <a href="images/08.jpg" data-lightbox="landscapes" data-title="Dunes - My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="images/thumbnails/08.jpg" class="thumb-img" alt="Sand dunes"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/09.jpg" class="thumb-img" alt="">
+            <a href="images/09.jpg" data-lightbox="landscapes" data-title="Countryside Lane - We enjoyed a quiet stroll down this countryside lane."><img src="images/thumbnails/09.jpg" class="thumb-img" alt="A road with trees arching over it from both sides"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/10.jpg" class="thumb-img" alt="">
+            <a href="images/10.jpg" data-lightbox="landscapes" data-title="Sunset - Sunset at the coast! The sky turned a lovely shade of orange."><img src="images/thumbnails/10.jpg" class="thumb-img" alt="The ocean crashing against cliffs at sunset"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/11.jpg" class="thumb-img" alt="">
+            <a href="images/11.jpg" data-lightbox="landscapes" data-title="Cave - I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="images/thumbnails/11.jpg" class="thumb-img" alt="The view from a mountainous cavern of a valley river far below"></a>
           </div>
           <div class="thumb-container">
-            <img src="images/thumbnails/12.jpg" class="thumb-img" alt="">
+            <a href="images/12.jpg" data-lightbox="landscapes" data-title="Bluebells - I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="images/thumbnails/12.jpg" class="thumb-img" alt="A field of bluebell plants with a snow-capped mountain in the distance"></a>
           </div>
 
         </div>
       </div>
     </main>
-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/lightbox/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        wrapAround: true,
+        disableScrolling: true
+      })
+    </script>
   </body>
 </html>
