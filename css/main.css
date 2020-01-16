@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* ----------------------------------
+SEARCH BAR
+---------------------------------- */
+
 .search-flex-contain {
   display: flex;
   flex-direction: row;
@@ -32,6 +36,11 @@
   outline-color: rgba(255, 210, 150, 0.53);
 }
 
+
+/* ----------------------------------
+GALLERY
+---------------------------------- */
+
 .container {
   width: 100%;
   text-align: center;
@@ -59,10 +68,27 @@
 .thumb-img {
   width: 100%;
   max-width: 250px;
+  border-radius: 10px;
+  transition: transform .3s,
+              opacity .5s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
 }
 
+.thumb-img:hover {
+  transform: scale(1.03);
+  opacity: .8;
+}
+
+.thumb-container span {
+  display:none;
+}
+
+/* ----------------------------------
+LIGHTBOX 2 - PLUGIN ALTERATIONS
+---------------------------------- */
+
 .lightbox .lb-dataContainer, .lightbox .lb-outerContainer, .lightbox .lb-container, .lightbox .lb-image {
-  max-width: 89%;
+  max-width: 100%;
   height: auto !important;
   width: auto !important;
   margin-left: auto;
@@ -99,7 +125,9 @@
 
 
 
-/* MEDIA QUERIES ------------------------------- */
+/* ----------------------------------
+MEDIA QUERIES
+---------------------------------- */
 
 @media (min-width: 635px) {
 
@@ -114,16 +142,21 @@
   .lb-data .lb-details {
     width: 60%;
   }
+
+
+
 }
 
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
 
   .thumb-container {
     width: calc( 100% / 4 );
     margin-top: 25px;
     margin-bottom: 25px;
-
   }
 
+  .lightbox .lb-dataContainer, .lightbox .lb-outerContainer, .lightbox .lb-container, .lightbox .lb-image {
+  max-width: 89%;
+  }
 
 }
