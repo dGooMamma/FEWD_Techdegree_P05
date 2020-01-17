@@ -11,7 +11,7 @@ SEARCH BAR
 .search-flex-contain {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+
 }
 
 #searchbox {
@@ -57,16 +57,12 @@ GALLERY
 }
 
 .thumb-container {
-  display: inline-block;
-  width: 50%;
-  margin: 10px -5px;
-  padding-left: 10px;
-  padding-right: 10px;
-
+  display: inline;
 }
 
 .thumb-img {
-  width: 100%;
+  width: 42%;
+  margin: 15px;
   max-width: 250px;
   border-radius: 10px;
   transition: transform .3s,
@@ -77,10 +73,6 @@ GALLERY
 .thumb-img:hover {
   transform: scale(1.03);
   opacity: .8;
-}
-
-.thumb-container span {
-  display:none;
 }
 
 /* ----------------------------------
@@ -131,8 +123,8 @@ MEDIA QUERIES
 
 @media (min-width: 635px) {
 
-  .thumb-container {
-    width: calc( 100% / 3 );
+  .thumb-img {
+    width: 27%;
   }
 
   .lb-data .lb-close {
@@ -149,10 +141,9 @@ MEDIA QUERIES
 
 @media (min-width: 900px) {
 
-  .thumb-container {
-    width: calc( 100% / 4 );
-    margin-top: 25px;
-    margin-bottom: 25px;
+  .thumb-img{
+    width: 19%;
+    margin: 20px;
   }
 
   .lightbox .lb-dataContainer, .lightbox .lb-outerContainer, .lightbox .lb-container, .lightbox .lb-image {
